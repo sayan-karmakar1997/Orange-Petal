@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Rajdhani';
+}
+h1, h2, h3, h4, h5, h6{
+    color: #1e4387;
+    font-weight: bold;
+    font-family: 'Rajdhani';
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size:40px ;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 15px;
+}
+.pointer{
+    cursor: pointer;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000
+}
+.ml-auto{
+    margin-left: auto;
+    margin-right: 65px;
+}
+.contact a{
+    margin-right: 10px;
+    color: #fff;
+}
+.nav-header{
+    padding: 10px;
+    background-color: #0b142f;
+    color: #fff;
+}
+.ml-auto ul li{
+    margin-right: 10px;
+}
+.ml-auto ul li .active{
+    color: #f99d30;
+}
+.date-age{
+    font-family: "Poppins";
+    align-items: center;
+}
+.check{
+    font-family: "Poppins" ;
+    background-color: #ef7534;
+}
+.check a span{
+    color: #fff;
+}
+.button-1{
+    background-color: #ef7534;
+    padding: 10px 20px;
+    color: #fff;
+}
+.count-section{
+    background-color: #ef7534;
+}
+.size{
+    font-size: 50px;
+}
+.Features-options{
+    padding: 35px;
+}
+.on-link{
+    margin-left: 15px;
+}
+#size-2{
+    font-size: 50px;
+}
+.right-qot{
+    font-size: 25px!important;
+    margin-left: 260px;
+}
+.left-qot{
+    font-size: 70px!important;
+}
+.photo{
+    margin-right: 10px;
+}
