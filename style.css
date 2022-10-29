@@ -99,3 +99,97 @@ a{
 .photo{
     margin-right: 10px;
 }
+.count-section{
+    position: relative;
+    z-index: 2;
+}
+.count-section::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100px;
+    background-color: #ef7534;
+}
+.level-up{
+    position: relative;
+    z-index: 3;
+}
+.aboutus-section{
+    background-image: url("img/about-us-background.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.immage-aboutus{
+    position: relative;
+}
+.immage-1{
+    position: relative;
+    top: -20px;
+}
+.immage-2{
+    position: absolute;
+    left: 35%;
+    bottom: -10px;
+    border-left: 10px solid #fff;
+    border-top: 10px solid #fff;
+}
+.banner-section{
+    position: relative;
+}
+.bannr-socal-icon{
+    position: absolute;
+    left:90% ;
+    transform: translatey(-50%);
+    top: 50%;
+    width:35px ;
+    font-size: 24px;
+    text-align: center;
+}
+.bannr-socal-icon a{
+    margin-bottom: 10px;
+    display: block;
+}
+.up-line{
+    display: inline-block;
+    height: 100px;
+    width: 1px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.banner-wrp{
+    position: absolute;
+    left: 0;
+    top:50%;
+    width: 100%;
+    z-index: 100;
+    transform: translatey(-50%);
+}
+.banner-section .carousel-control-prev {
+    z-index: 110;
+}
+.from-fild{
+    position: relative;
+    padding: 30px;
+}
+.from-fild input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 5;
+}
+.from-fild input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
