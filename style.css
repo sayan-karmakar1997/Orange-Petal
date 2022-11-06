@@ -92,6 +92,12 @@ header.header.fixed{
     background-color: #ef7534;
     padding: 10px 20px;
     color: #fff;
+    border-radius: 2px;
+    transition: 1s;
+}
+.button-1:hover{
+    background-color: #fdc6a8;
+    color: #6e6a68;
 }
 .count-section{
     background-color: #ef7534;
@@ -110,6 +116,54 @@ header.header.fixed{
 }
 .photo{
     margin-right: 10px;
+    transition: 1s;
+}
+.photo:hover{
+    -ms-transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+  transform: scale(1.5); 
+}
+.banner-section .carousel-control-prev, .banner-section .carousel-control-next{
+    background-color:rgb(10, 22, 41,0.5);
+    top: 50%;
+    bottom: inherit;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+} 
+.carousel-control-prev{
+    left: 0;
+}
+.carousel-control-next{
+    right: 0;
+}
+.gallery-section .carousel-control-prev, .gallery-section .carousel-control-next{
+    background-color: rgba(212, 212, 212, 0.8);
+    top: 50%;
+    bottom: inherit;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+} 
+.carousel-control-prev{
+    left: 0;
+}
+.carousel-control-next{
+    right: 0;
 }
 .count-section{
     position: relative;
@@ -124,6 +178,7 @@ header.header.fixed{
     height: 100px;
     background-color: #ef7534;
 }
+
 .level-up{
     position: relative;
     z-index: 3;
@@ -155,7 +210,7 @@ header.header.fixed{
     position: absolute;
     left:90% ;
     transform: translatey(-50%);
-    top: 50%;
+    top: 60%;
     width:35px ;
     font-size: 24px;
     text-align: center;
@@ -188,7 +243,7 @@ header.header.fixed{
 }
 .from-fild{
     position: relative;
-    padding: 20px;
+    padding: 9px;
 }
 .from-fild input{
     position: absolute;
@@ -213,6 +268,8 @@ header.header.fixed{
     border: none;
     color: #fff;
     background-color: #ef7534;
+    font-size: 13px;
+    padding: 10px;
 }
 .from-fild select{
     border: none;
@@ -227,9 +284,6 @@ header.header.fixed{
 }
 .nav-header{
     border-bottom:solid #fff 1px ;
-}
-.check-box{
-  margin-top: 20px;
 }
 .box{
     position: absolute;
@@ -335,7 +389,10 @@ width: 35%;
 }
 .copy-right-section{
     background-color: #ef7534;
-    color: #fff;
     padding: 15px;
+}
+.footer-heading{
     font-size: 18px;
+    content: "\00A9";
+    color: #fff;
 }
