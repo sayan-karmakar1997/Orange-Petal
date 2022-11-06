@@ -41,7 +41,6 @@ a{
 }
 .ml-auto{
     margin-left: auto;
-    margin-right: 65px;
 }
 .contact a{
     margin-right: 10px;
@@ -49,11 +48,11 @@ a{
 }
 .nav-header{
     padding: 10px;
-    background-color: #0b142f;
     color: #fff;
 }
 .ml-auto ul li{
-    margin-right: 10px;
+    margin-right: 20px;
+    font-weight: bold;
 }
 .ml-auto ul li a{
     color: #fff;
@@ -64,6 +63,23 @@ a{
 .date-age{
     font-family: "Poppins";
     align-items: center;
+}
+header.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0,0);
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+}
+header.header.fixed{
+    background-color: #1e4387;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 .check{
     font-family: "Poppins" ;
@@ -91,13 +107,6 @@ a{
 }
 #size-2{
     font-size: 50px;
-}
-.right-qot{
-    font-size: 25px!important;
-    margin-left: 260px;
-}
-.left-qot{
-    font-size: 70px!important;
 }
 .photo{
     margin-right: 10px;
@@ -216,9 +225,6 @@ a{
     font-family: "Caveat";
     font-size: 35px;
 }
-.header-bottom{
-    background-color: #152131;
-}
 .nav-header{
     border-bottom:solid #fff 1px ;
 }
@@ -251,6 +257,7 @@ a{
 }
 .heading-3{
     font-size: 50px;
+    font-weight: bold;
 }
 .optional-hotel-section{
     background-image: url("img/hotel-background.png");
@@ -259,13 +266,76 @@ a{
     background-repeat: no-repeat;
 }
 .price-section{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0,0.8);
     color: #fff;
     padding: 15px;
     position:relative;
     bottom: 103px;
-    opacity: 0.5;
 }
 .price-section h6{
     color: #fff;
+}
+.font-size{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.operational-section{
+    background-image: url("img/sam-smith-background-img.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ctnr-box{
+    background-color: #690c10;
+    border-radius: 5px;
+    
+}
+.margin_left{
+    margin-left: 15px;
+}
+.header-5{
+    font-weight: bold;
+    color: #000;
+    font-size: 22px;
+}
+.read-more{
+    color: #690c10;
+    font-weight: bold;
+    font-size: 16px;
+}
+#date{
+    color: #313131;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-section{
+    background-color: #171717;
+}
+.yellow-color{
+    color: #ef7534;
+}
+.white-color{
+    color: #fff;
+}
+.underline{
+background-color: #ef7534;
+height: 2px;
+width: 35%;
+}
+.link{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-socal-icon{
+    background-color: #ef7534;
+    margin-right:15px;
+    color: #fff;
+    padding: 10px;
+}
+.copy-right-section{
+    background-color: #ef7534;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
 }
