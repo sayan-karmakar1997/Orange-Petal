@@ -1,562 +1,765 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-    font-family: 'Rajdhani';
-}
-h1, h2, h3, h4, h5, h6{
-    color: #1e4387;
-    font-weight: bold;
-    font-family: 'Rajdhani';
-}
-h1{
-    font-size: 50px;
-}
-h2{
-    font-size:40px ;
-}
-h3{
-    font-size: 30px;
-}
-h4{
-    font-size: 25px;
-}
-h5{
-    font-size: 20px;
-}
-h6{
-    font-size: 15px;
-}
-.pointer{
-    cursor: pointer;
-}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color:#000
-}
-.ml-auto{
-    margin-left: auto;
-}
-.contact a{
-    margin-right: 10px;
-    color: #fff;
-}
-.nav-header{
-    padding: 10px;
-    color: #fff;
-}
-.ml-auto ul li{
-    margin-right: 20px;
-    font-weight: bold;
-}
-.ml-auto ul li a{
-    color: #fff;
-}
-.ml-auto ul li .active{
-    color: #f99d30;
-}
-.date-age{
-    font-family: "Poppins";
-    align-items: center;
-}
-header.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0,0);
-    -webkit-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-}
-header.header.fixed{
-    background-color: #1e4387;
-    -webkit-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-}
-.check{
-    font-family: "Poppins" ;
-    background-color: #ef7534;
-}
-.check a span{
-    color: #fff;
-}
-.button-1{
-    background-color: #ef7534;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 2px;
-    transition: 1s;
-}
-.button-1:hover{
-    background-color: #fdc6a8;
-    color: #6e6a68;
-}
-.count-section{
-    background-color: #ef7534;
-}
-.size{
-    font-size: 50px;
-}
-.Features-options{
-    padding: 35px;
-}
-.on-link{
-    margin-left: 15px;
-}
-#size-2{
-    font-size: 50px;
-}
-.photo{
-    margin-right: 10px;
-    transition: 1s;
-}
-.photo:hover{
-    -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5); 
-  transform: scale(1.5); 
-}
-.banner-section .carousel-control-prev, .banner-section .carousel-control-next{
-    background-color:rgb(10, 22, 41,0.5);
-    top: 50%;
-    bottom: inherit;
-    transform: translateY(-50%);
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    padding: 0;
-    margin: 0;
-} 
-.carousel-control-prev{
-    left: 0;
-}
-.carousel-control-next{
-    right: 0;
-}
-.gallery-section .carousel-control-prev, .gallery-section .carousel-control-next{
-    background-color: rgba(212, 212, 212, 0.8);
-    top: 50%;
-    bottom: inherit;
-    transform: translateY(-50%);
-    border-radius: 5px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    padding: 0;
-    margin: 0;
-} 
-.carousel-control-prev{
-    left: 0;
-}
-.carousel-control-next{
-    right: 0;
-}
-.count-section{
-    position: relative;
-    z-index: 2;
-}
-.count-section::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    height: 100px;
-    background-color: #ef7534;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orange Petal</title>
 
-.level-up{
-    position: relative;
-    z-index: 3;
-}
-.aboutus-section{
-    background-image: url("img/about-us-background.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-.immage-aboutus{
-    position: relative;
-}
-.immage-1{
-    position: relative;
-    top: -20px;
-}
-.immage-2{
-    position: absolute;
-    left: 35%;
-    bottom: -10px;
-    border-left: 10px solid #fff;
-    border-top: 10px solid #fff;
-}
-.banner-section{
-    position: relative;
-}
-.bannr-socal-icon{
-    position: absolute;
-    left:90% ;
-    transform: translatey(-50%);
-    top: 60%;
-    width:35px ;
-    font-size: 24px;
-    text-align: center;
-}
-.bannr-socal-icon a{
-    margin-bottom: 10px;
-    display: block;
-    color: #fff;
-}
-.up-line{
-    display: inline-block;
-    height: 100px;
-    width: 1px;
-    background-color: #fff;
-    margin-bottom: 10px;
-}
-.banner-wrp{
-    position: absolute;
-    left: 0;
-    top:50%;
-    width: 100%;
-    z-index: 100;
-    transform: translatey(-50%);
-}
-.banner-section .carousel-control-prev{
-    z-index: 110;
-}
-.banner-section .carousel-control-next{
-    z-index: 110;
-}
-.from-fild{
-    position: relative;
-    padding: 9px;
-}
-.from-fild input{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index: 5;
-}
-.from-fild input::-webkit-calendar-picker-indicator {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-  }
-.check-btn{
-    border: none;
-    color: #fff;
-    background-color: #ef7534;
-    font-size: 13px;
-    padding: 10px;
-}
-.from-fild select{
-    border: none;
-}
-.welcome{
-    color: #fff;
-}
-.utopia-heading{
-    color: #ef7534;
-    font-family: "Caveat";
-    font-size: 35px;
-}
-.nav-header{
-    border-bottom:solid #fff 1px ;
-}
-.box{
-    position: absolute;
-}
-.box-box{
-    position: relative;
-    background-color: #ef7534;
-    width: 97px;
-    height: 2px;
-    bottom: 27px;
-    left: 120px;
-}
-.heading-txt{
-    color: #ef7534;
-    font-family: "Caveat";
-    font-size: 35px;
-}
-.box-box-2{
-    position: relative;
-    background-color: #ef7534;
-    width: 97px;
-    height: 2px;
-    bottom: 27px;
-    left: 230px;
-}
-.heading-3{
-    font-size: 50px;
-    font-weight: bold;
-}
-.optional-hotel-section{
-    background-image: url("img/hotel-background.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-.price-section{
-    background-color: rgba(0, 0, 0,0.8);
-    color: #fff;
-    padding: 15px;
-    position:relative;
-    bottom: 103px;
-}
-.price-section h6{
-    color: #fff;
-}
-.font-size{
-    font-size: 14px;
-    margin-right: 5px;
-}
-.operational-section{
-    background-image: url("img/sam-smith-background-img.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-.ctnr-box{
-    background-color: #690c10;
-    border-radius: 5px;
-    
-}
-.margin_left{
-    margin-left: 15px;
-}
-.header-5{
-    font-weight: bold;
-    color: #000;
-    font-size: 22px;
-}
-.read-more{
-    color: #690c10;
-    font-weight: bold;
-    font-size: 16px;
-}
-#date{
-    color: #313131;
-    font-size: 16px;
-    font-weight: bold;
-}
-.footer-section{
-    background-color: #171717;
-}
-.yellow-color{
-    color: #ef7534;
-}
-.white-color{
-    color: #fff;
-}
-.underline{
-background-color: #ef7534;
-height: 2px;
-width: 35%;
-}
-.link{
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-}
-.footer-socal-icon{
-    background-color: #ef7534;
-    margin-right:15px;
-    color: #fff;
-    padding: 10px;
-}
-.copy-right-section{
-    background-color: #ef7534;
-    padding: 15px;
-}
-.footer-heading{
-    font-size: 18px;
-    content: "\00A9";
-    color: #fff;
-}
-.menu-close{
-    display: none;
-}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+</head>
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
+<body>
+    <div>
+    <header class="header">
+        <div class="nav-header">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <div class="">
+                        <span class="header-name">Guest reviews and query | (9:00 AM - 8:00 PM) | </span>
+                    </div>
+                    <div class="ml-auto contact">
+                        <a class=""  href="tel:+1-2345-3455-33"><i class='fas fa-phone'></i> <span>+1-2345-3455-33</span></a>
+                        <a class=""  href="tel:+1-2345-3455-33"><i class='fas fa-phone'></i> <span>+1-2345-3455-33</span></a>
+                        <a class=""  href=" demowebsite@12..com"><i class="fa fa-envelope"></i> <span>reservations@orangepetalhotels.com</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom py-3">
+            <div class="container">
+                  <div class="d-flex align-items-center">
+                    <img src="img/header-logo.png" class="logo-img">
+          <div class="ml-auto">
+            <div class="d-flex align-items-center">
+              <div class="slide-menu"  id="collapseExample">
+                <ul class="d-flex primerynav">
+                  <li>
+                    <a class="active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li>
+                    <a class="" aria-current="page" href="#">Covid-19 Update</a>
+                  </li>
+                  <li>
+                    <a class="" aria-current="page" href="#">Our Hotels</a>
+                  </li>
+                  <li>
+                    <a class="" aria-current="page" href="#">Our Story</a>
+                  </li>
+                  <li class="">
+                    <a class="" aria-current="page" href="#">Services</a>
+                  </li>
+                  <li class="">
+                    <a class="" aria-current="page" href="#">Our Team</a>
+                  </li>
+                  <li class="">
+                    <a class="" aria-current="page" href="#">Our Brand</a>
+                  </li>
+                  <li class="">
+                    <a class="" aria-current="page" href="#">Gallery</a>
+                  </li>
+                  <li class="">
+                    <a class="" aria-current="page" href="#">More</a>
+                  </li>
+                  </ul>
+                  <div class="menu-close"><i class="fa fa-window-close" aria-hidden="true"></i></div>
+            </div>
+            <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                <span class="fa-bars fa"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    </header>
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-    transform: translateX(0);
-}
-.multiple-slider-item img:hover {
-    transform: scale(1.1);
-}
-.multiple-slider-item img {
-    transition: all 1s;
-    height: 250px;
-}
-.multiple-slider-item{
-    overflow: hidden;
-}
+    <div class="banner-section">
 
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner-img.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner-img.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-/* Media Quarye Start */
+        <div class="bannr-socal-icon">
+            <div class="up-line"></div>
+            <a href=""><i class="fa fa-facebook-f"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="banner-wrp">
+        <div class="container py-lg-5">
+            <div class="py-3 mobile-position">
+                 <div class="d-flex justify-content-center"><img src="img/utopia.png" class=""></div>
+                 <div class="d-flex justify-content-center"><span class="utopia-heading">Utopia Redefined</span></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center py-3">
+                <h1 class="welcome">Welcome To OrangePetal</h1>
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12">
+            <div class="text-center">
+             <form class="d-block mx-5 bg-white">   
+            <div class="row">
+                <div class="col date-age">
+                    <div class="d-flex align-items-center from-fild">
+                        <span class="font-size">Arrival Date</span>
+                        <i class="fa fa-calendar"></i>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="col date-age">
+                    <div class="d-flex align-items-center from-fild">
+                        <span class="font-size">Departure Date</span>
+                        <i class="fa fa-calendar"></i>
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="col date-age">
+                  <div class="font-size from-fild">
+                    <select>
+                        <option>Adults</option>
+                        <option>Childrens</option>
+                        <option> senior citizens</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col date-age">
+                    <div class="font-size from-fild">
+                        <select>
+                            <option>Childrens</option>
+                            <option>Adults</option>
+                            <option> senior citizens</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="col check">
+                    <div class="check-box">
+                        <button type="submit" class="check-btn" >
+                            CHECK AVAILABILITY
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </form>  
+        </div>  
+    </div>
+    </div>  
+    </div>
+</div>
+    </div>
+    <div class="aboutus-section">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="heading-txt">About Us</span>
+                    <div class="box">
+                        <div class="box-box"></div>
+                    </div>
+                    <div>
+                        <h3 class="heading-3">Discover Serentity</h3>
+                    </div>
+                    <p>With properties at Jhalda (Purulia), Madarihat (Jaldapara), Kolakham, Gangtok*, Tajpur*, Mirik*, Maithon*, Kullu*; 
+                        Orangepetal Hotels and Resorts epitomizes luxury in blissful settings. Making a promise of service excellence delivered by our well trained, 
+                        attentive, young brigade, these all locations make for excellent choices for your most favourite holidays with your friends, 
+                        families and loved ones.</p>
+                         <a href="" class="button-1">
+                                READ MORE
+                                <i class="fa fa-plus"></i>
+                            </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="immage-aboutus">
+                        <img src="img/img-1.png" class="w-60 immage-1" alt="">
+                        <img src="img/img-2.png" class="w-60 immage-2" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="optional-hotel-section">
+        <div class="container py-5">
+            <div class="">
+                <span class="heading-txt"> Operational Hotels</span>
+                <div class="box">
+                    <div class="box-box-2"></div>
+                </div>
+                <div>
+                    <h3 class="heading-3">Our Accomodations</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="img/hotel-img-1.png" class="acomodation-img w-100">
+                        <div class="">
+                            <div class="price-section">
+                                <h6>220 Center Console</h6>
+                                <span>₹ 3,500 Per Night</span>
+                                <br>
+                                <span>Jhalda (Purulia), West Bengal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="img/hotel-img-2.png" class="w-100">
+                        <div class="">
+                            <div class="price-section">
+                                <h6>220 Center Console</h6>
+                                <span>₹ 3,500 Per Night</span>
+                                <br>
+                                <span>Jhalda (Purulia), West Bengal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="img/hotel-img-3.png" class="w-100">
+                        <div class="">
+                            <div class="price-section">
+                                <h6>220 Center Console</h6>
+                                <span>₹ 3,500 Per Night</span>
+                                <br>
+                                <span>Jhalda (Purulia), West Bengal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                        <img src="img/hotel-img-2.png" class="w-100">
+                        <div class="">
+                            <div class="price-section">
+                                <h6>220 Center Console</h6>
+                                <span>₹ 3,500 Per Night</span>
+                                <br>
+                                <span>Jhalda (Purulia), West Bengal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="count-section pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <h4>32647</h4>
+                    <span>HAPPY COUSTOMER</span>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h4>1821</h4>
+                    <span>AMAZING TOURS</span>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h4>5659</h4>
+                    <span>IN BUSINESS</span>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h4>11857</h4>
+                    <span>SPPORT CASES</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-section py-5">
+        <div class="container">
+            <div class="level-up bg-white pt-5">
+            <div class="text-center">
+                <h4>Features</h4>
+                <span>Discover what makes us a five star hotel</span>
+            </div>
+            <div class="row">
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='fas fa-utensils size'></i>
+                        <a href="" class="on-link">
+                        <span>Resta rant</span>
+                        <br>
+                        <span>/in-room-dining</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='fas fa-car-side size'></i>
+                        <a href="" class="on-link">
+                        <span>Transport Services</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='far fa-clock size'></i>
+                        <a href="" class="on-link">
+                        <span>Check In - 11Am</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='far fa-clock size'></i>
+                        <a href="" class="on-link">
+                        <span>Check Out - 10Am</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='fas fa-dog size'></i>
+                        <a href="" class="on-link">
+                        <span>Disabled/pet Friendly</span>
+                        <br>
+                        <span>Accommodations</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='fas fa-mug-hot size'></i>
+                        <a href="" class="on-link">
+                        <span>Complimentary <br>Breakfast</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='fas fa-parking size'></i>
+                        <a href="" class="on-link">
+                        <span>Parking Facility</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class="fa fa-wifi" id="size-2"></i>
+                        <a href="" class="on-link">
+                        <span>Free Wi-Fi Access</span>
+                       </a>
+                    </div>
+                </div>
+                <div class="col-md-4 Features-options">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <i class='fas fa-swimming-pool size'></i>
+                        <a href="" class="on-link">
+                        <span>Swimming <br> Pool Suite</span>
+                       </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="operational-section">
+        <div class="container">
+        <div class="py-2">
+            <span class="heading-txt">Operational Hotels</span>
+            <div class="box">
+                <div class="box-box-2"></div>
+            </div>
+            <div>
+                <h3 class="heading-3">Our Accomodations</h3>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="row gx-5">
+                <div class="col-md-6">
+                    <div class="text-white p-4 ctnr-box">
+                    <div class="">
+                        <i class="fa fa-quote-left fa-2x"></i>
+                        <p>Lorem ipsum dolor site amet, consecteture adipiscing elit, 
+                            sed do eisumod tempor
+                            incididunt utlabore et dolor magna aliqua. 
+                            Quis ipsum Suspendisse ultrices grovida. Risus.
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="img/sam-smith.png" class="rounded-pill">
+                        <span class="margin_left">Sam Smith</span>
+                        <i class="fa fa-quote-right fa-5x ml-auto"></i>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-white p-4 ctnr-box">
+                        <div class="">
+                            <i class="fa fa-quote-left fa-2x"></i>
+                            <p>Lorem ipsum dolor site amet, consecteture adipiscing elit, 
+                                sed do eisumod tempor
+                                incididunt utlabore et dolor magna aliqua. 
+                                Quis ipsum Suspendisse ultrices grovida. Risus.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="img/sam-smith.png" class="rounded-pill">
+                            <span class="margin_left">Sam Smith</span>
+                            <i class="fa fa-quote-right fa-5x ml-auto"></i>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="gallery-section">
+        <div class="container">
+            <div class="py-5">
+                <span class="heading-txt">Photos</span>
+                <div class="box">
+                    <div class="box-box"></div>
+                </div>
+                <div>
+                    <h3 class="heading-3">Our Gallery</h3>
+                </div>
+            </div>
+            <!-- <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row gx-2 py-3">
+                        <div class="col-md-3">
+                            <img src="img/gallery-1.png" class="w-100 photo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/gallery-2.png" class="w-100 photo">
+                        </div>
+                        <div class="col-md-3"> 
+                            <img src="img/gallery-3.png" class="w-100 photo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/gallery-4.png" class="w-100 photo">
+                        </div>    
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row gx-2 py-3">
+                        <div class="col-md-3">
+                            <img src="img/gallery-1.png" class="w-100 photo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/gallery-2.png" class="w-100 photo">
+                        </div>
+                        <div class="col-md-3"> 
+                            <img src="img/gallery-3.png" class="w-100 photo">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/gallery-4.png" class="w-100 photo">
+                        </div>    
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div> -->
+              <div class="container text-center my-3">
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="recipeCarousel" class="carousel slide multiple-slider" data-bs-ride="carousel">
+                        <div class="carousel-inner " role="listbox">
+                            <div class="carousel-item multiple-slider-item active">
+                                <div class="col-md-3 pe-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/gallery-1.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item multiple-slider-item">
+                                <div class="col-md-3 pe-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/gallery-2.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item multiple-slider-item">
+                                <div class="col-md-3 pe-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/gallery-3.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="carousel-item multiple-slider-item">
+                                <div class="col-md-3 pe-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/gallery-4.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item multiple-slider-item">
+                                <div class="col-md-3 pe-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/gallery-1.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item multiple-slider-item">
+                                <div class="col-md-3 pe-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="img/gallery-3.png" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>		
+            </div>
+    </div>
+    <div class="blog-news-section">
+        <div class="container">
+            <div class="py-5">
+                <span class="heading-txt">Our Blog</span>
+                <div class="box">
+                    <div class="box-box"></div>
+                </div>
+                <div>
+                    <h3 class="heading-3">Latest News</h3>
+                </div>
+            </div> 
+            <div class="py-2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/news-img.jpg" class="w-100 news-photo">
+                        <div class="p-4">
+                        <div>
+                            <h5 class="header-5">Lorem Ipsum is simply dummy
+                                text of the printing tingry.
+                            </h5>
+                            <p>Lorem ipsum is dolor site amet.csectetur adipiscing
+                                elit, dolor smod tempor incididunt utlabore et....
+                            </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="" class="read-more">Read More</a>
+                            </div>
+                            <div class="col-md-6">
+                               <span>Jan 03,2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/news-img.jpg" class="w-100 news-photo">
+                        <div class="p-4">
+                            <div>
+                                <h5  class="header-5">Lorem Ipsum is simply dummy
+                                    text of the printing tingry.
+                                </h5>
+                                <p>Lorem ipsum is dolor site amet.csectetur adipiscing
+                                    elit, dolor smod tempor incididunt utlabore et....
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="" class="read-more">Read More</a>
+                                </div>
+                                <div class="col-md-6">
+                                   <span>Jan 03,2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/news-img.jpg" class="w-100 news-photo">
+                        <div class="p-4">
+                            <div>
+                                <h5  class="header-5">Lorem Ipsum is simply dummy
+                                    text of the printing tingry.
+                                </h5>
+                                <p>Lorem ipsum is dolor site amet.csectetur adipiscing
+                                    elit, dolor smod tempor incididunt utlabore et....
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="" class="read-more">Read More</a>
+                                </div>
+                                <div class="col-md-6">
+                                   <span id="date">Jan 03,2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-@media only screen and (min-width: 992px) and (max-width:1169px){
-	  
-}
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
+    <div class="footer-section py-5 blue-color">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-md-6">
+              <h2 class="yellow-color">Newsletter</h2>
+              <span class="white-color">Subcribe Our Newslatter To Get Latest Update And News</span>
+            </div>
+            <div class="col-md-6">  
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Your Email">
+              <a href="" class="button-1 text">SUBSCRIBE</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-5">
+          <div class="row gx-5">
+            <div class="col-md-3">
+              <div class="top-box"></div>
+              <div class="">
+                <div class="">
+                    <img src="img/logo-footer.png" class="w-50 p-2">
+                </div>
+                <p class="white-color">Lorem ipsum dolor site amet, consecteture adipiscing elit, sed
+                  do eiusmos tempor. LoremLore, ipsum dolor site amet,
+                </p>
+                  <div class="py-2 d-flex">
+                    <a href="" class="footer-socal-icon"><i class="fa fa-facebook-f"></i></a>
+                    <a href="" class="footer-socal-icon"><i class="fa fa-twitter"></i></i></a>
+                    <a href="" class="footer-socal-icon"><i class="fa fa-youtube-play"></i></i></a>
+                    <a href="" class="footer-socal-icon"><i class="fa fa-pinterest"></i></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h4 class="white-color">Quick Links</h4>
+                <div class="underline"></div>
+                <div class="justify-content-start pt-3">
+                  <span><a class="white-color" href="">About Us</a></span>
+                  <br>
+                  <span><a class="white-color" href="">Orange Vision & Mission</a></span>
+                  <br>
+                  <span><a class="white-color" href="">Orange Core Safety</a></span>
+                  <br>
+                  <span><a class="white-color" href="">Service</a></span>
+                  <br>
+                  <span><a class="white-color" href="">Our Team</a></span>
+                  <br>
+                  <span><a class="white-color" href="">Our Brands</a></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <h4 class="white-color">Quick Links</h4>
+              <div class="underline"></div>
+              <br>
+             <ul>
+              <li><a class="white-color" href="">Gallery</a></li>
+              <li><a class="white-color" href="">Blogs</a></li>
+              <li><a class="white-color" href="">Partnership With US</a></li>
+              <li><a class="white-color" href="">News & Medias</a></li>
+              <li><a class="white-color" href="">Weddings & Events</a></li>
+              <li><a class="white-color" href="">Career</a></li>
+              <li><a class="white-color" href="">Contact US</a></li>
+             </ul>
+            </div>
+            <div class="col-md-3">
+              <h4 class="white-color">Get In Touch</h4>
+              <div class="underline"></div>
+              <br>
+             <ul>
+              <li><span class="link">Phone:</span> <a class="white-color" href="">+97 822002677</a></li>
+              <li><span class="link">Email:</span> <a class="white-color" href="">enquiry@roomsonmytravel.in</a></li>
+              <li><span class="link">Location:</span> <a class="white-color" href=""># 4, Fairlie Place, HMP House,
+                5th Floor, Kolkata - 700001
+                West Bengal, India
+              </a></li>
+             </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <section class="copy-right-section">
+        <div class="text-center"><span class="footer-heading">Orangepetal &copy; 2021 All Rights Reserved</span></div>
+      </section>
+
+      
+
+</div>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+    $(".news-photo").hover(
+        function() {$(this).attr("src","img/news-hover.png");},
+        function() {$(this).attr("src","img/news-img.jpg");
+    });
+});
+
+    $( document ).ready(function() {
+        var HHeight = $("header.header").outerHeight();            
+        $(window).scroll(function () {         
+            if ($(this).scrollTop() > HHeight ) {             
+                $('header.header').addClass('fixed');  
+                $(".nav-header").slideUp();                   
+            } else {             
+                $('header.header').removeClass('fixed');
+                $(".nav-header").slideDown();                       
+            }
+        });
+        $(".menu-close").click(function(){
+    $("#collapseExample").removeClass("show");
+  });
+  let items = document.querySelectorAll('.multiple-slider .multiple-slider-item')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i=1; i<minPerSlide; i++) {
+				if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
     }
-
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
-    }
-
-}
-@media screen and (max-width: 767px){
-    .contact span{
-        display: none;
-    }
-    .navbar-toggler.d-none{
-        display: block!important;
-    }
-   #collapseExample{
-    display: flex;
-    right: 100%;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color:#222;
-    top: 0;
-    -webkit-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-   }
-   #collapseExample.show{
-    right: 0;
-    -webkit-transition: all 0.3s linear;
-       -moz-transition: all 0.3s linear;
-            transition: all 0.3s linear;
-   }
-   .welcome{
-    font-size: 20px;
-    text-align: center;
-    color: #000;
-   }
-   .date-age{
-    width: 100%;
-    flex: 1 0 100%;
-    text-align: left;
-   }
-   .bannr-socal-icon{
-    display: none;
-   }
-   .banner-wrp{
-    position: static;
-    transform: none;
-    text-align: center;
-   }
-   .banner-wrp div.py-3{
-    width: 100%;
-   }
-   .aboutus-section{
-    width: 100%;
-   }
-   .immage-aboutus{
-    padding-top: 75px;
-   }
-   .immage-aboutus img{
-    width: 20%;
-   }
-   .Features-options{
-    text-align: left;
-   }
-   .slide-menu > ul{
-    display: block!important;
-
-   }
-   .menu-close {
-    width: 100%;
-    text-align: right;
-    color: white;
-    display: block;
-}
-span.header-name {
-    font-size: 12px;
-}
-
-.contact a {
-    font-size: 12px;
-}
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    
-}
-
-img.logo-img {
-    width: 85px;
-}
-.banner-section .carousel-control-prev, .banner-section .carousel-control-next {
-    background-color: transparent;
-    top: 70%;
-    transform: translateY(-70%);
-}
-button.navbar-toggler.d-none {
-    color: #fff;
-}
-  
-.carousel-inner .carousel-item > div {
-    display: none;
-}
-.carousel-inner .carousel-item > div:first-child {
-    display: block;
-}
-.mobile-position {
-    position: absolute;
-    top: 8%;
-}
-
-span.utopia-heading {
-    font-size: 18px;
-}
-.welcome {
-    position: absolute;
-    top: 25%;
-    color: #fff;
-}
-.date-age {
-    width: 100%;
-    flex: 1 0 100%;
-    text-align: left;
-    padding: 0;
-    box-shadow: 0px 0px 2px 0px #e9e9e9;
-    margin-bottom: 10px;
-}
-}
+})
+    });
+</script>
+</body>
+</html>
