@@ -396,3 +396,167 @@ width: 35%;
     content: "\00A9";
     color: #fff;
 }
+.menu-close{
+    display: none;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+.multiple-slider-item img:hover {
+    transform: scale(1.1);
+}
+.multiple-slider-item img {
+    transition: all 1s;
+    height: 250px;
+}
+.multiple-slider-item{
+    overflow: hidden;
+}
+
+
+/* Media Quarye Start */
+
+@media only screen and (min-width: 992px) and (max-width:1169px){
+	  
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+
+}
+@media screen and (max-width: 767px){
+    .contact span{
+        display: none;
+    }
+    .navbar-toggler.d-none{
+        display: block!important;
+    }
+   #collapseExample{
+    display: flex;
+    right: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:#222;
+    top: 0;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+   }
+   #collapseExample.show{
+    right: 0;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+   }
+   .welcome{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+   }
+   .date-age{
+    width: 100%;
+    flex: 1 0 100%;
+    text-align: left;
+   }
+   .bannr-socal-icon{
+    display: none;
+   }
+   .banner-wrp{
+    position: static;
+    transform: none;
+    text-align: center;
+   }
+   .banner-wrp div.py-3{
+    width: 100%;
+   }
+   .aboutus-section{
+    width: 100%;
+   }
+   .immage-aboutus{
+    padding-top: 75px;
+   }
+   .immage-aboutus img{
+    width: 20%;
+   }
+   .Features-options{
+    text-align: left;
+   }
+   .slide-menu > ul{
+    display: block!important;
+
+   }
+   .menu-close {
+    width: 100%;
+    text-align: right;
+    color: white;
+    display: block;
+}
+span.header-name {
+    font-size: 12px;
+}
+
+.contact a {
+    font-size: 12px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+
+img.logo-img {
+    width: 85px;
+}
+.banner-section .carousel-control-prev, .banner-section .carousel-control-next {
+    background-color: transparent;
+    top: 70%;
+    transform: translateY(-70%);
+}
+button.navbar-toggler.d-none {
+    color: #fff;
+}
+  
+.carousel-inner .carousel-item > div {
+    display: none;
+}
+.carousel-inner .carousel-item > div:first-child {
+    display: block;
+}
+.mobile-position {
+    position: absolute;
+    top: 8%;
+}
+
+span.utopia-heading {
+    font-size: 18px;
+}
+.welcome {
+    position: absolute;
+    top: 25%;
+    color: #fff;
+}
+.date-age {
+    width: 100%;
+    flex: 1 0 100%;
+    text-align: left;
+    padding: 0;
+    box-shadow: 0px 0px 2px 0px #e9e9e9;
+    margin-bottom: 10px;
+}
+}
